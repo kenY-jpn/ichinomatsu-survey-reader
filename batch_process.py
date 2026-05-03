@@ -26,19 +26,127 @@ DATE_BOX = (50, 700, 250, 750)
 ROOM_BOX = (50, 750, 250, 800)
 
 # ↓↓↓ ★ ここに各質問項目のチェックボックスの座標（x1, y1, x2, y2）を入力してください ★ ↓↓↓
-# ダミーの座標を入れています。実際のPDFに合わせて調べた数値を書いてください。
 CHECKBOX_COORDS = {
     "宿泊全般": {
-        "大変満足": [100, 200, 120, 220],
-        "ほぼ満足": [130, 200, 150, 220],
-        "やや不満": [160, 200, 180, 220],
-        "不満":     [190, 200, 210, 220]
+        "大変満足": [245, 72, 256, 82],
+        "ほぼ満足": [322, 72, 333, 82],
+        "やや不満": [398, 72, 411, 82],
+        "不満":     [475, 72, 486, 82]
     },
     "フロント_チェックイン": {
-        "大変満足": [100, 250, 120, 270],
-        "ほぼ満足": [130, 250, 150, 270],
-        "やや不満": [160, 250, 180, 270],
-        "不満":     [190, 250, 210, 270]
+        "大変満足": [245, 128, 256, 139],
+        "ほぼ満足": [322, 128, 333, 139],
+        "やや不満": [398, 128, 411, 139],
+        "不満":     [475, 128, 486, 139]
+    },
+    "フロント_電話": {
+        "大変満足": [245, 143, 256, 154],
+        "ほぼ満足": [322, 143, 333, 154],
+        "やや不満": [398, 143, 411, 154],
+        "不満":     [475, 143, 486, 154]
+    },
+    "客室_係り": {
+        "大変満足": [245, 191, 256, 202],
+        "ほぼ満足": [322, 191, 333, 202],
+        "やや不満": [398, 191, 411, 202],
+        "不満":     [475, 191, 486, 202]
+    },
+    "客室_雰囲気": {
+        "大変満足": [245, 207, 256, 218],
+        "ほぼ満足": [322, 207, 333, 218],
+        "やや不満": [398, 207, 411, 218],
+        "不満":     [475, 207, 486, 218]
+    },
+    "客室_清掃": {
+        "大変満足": [245, 225, 256, 236],
+        "ほぼ満足": [322, 225, 333, 236],
+        "やや不満": [398, 225, 411, 236],
+        "不満":     [475, 225, 486, 236]
+    },
+    "客室_お部屋全般": {
+        "大変満足": [245, 239, 256, 250],
+        "ほぼ満足": [322, 239, 333, 250],
+        "やや不満": [398, 239, 411, 250],
+        "不満":     [475, 239, 486, 250]
+    },
+    "客室_寝具": {
+        "大変満足": [245, 255, 256, 266],
+        "ほぼ満足": [322, 255, 333, 266],
+        "やや不満": [398, 255, 411, 266],
+        "不満":     [475, 255, 486, 266]
+    },
+    "客室_浴衣": {
+        "大変満足": [245, 272, 256, 283],
+        "ほぼ満足": [322, 272, 333, 283],
+        "やや不満": [398, 272, 411, 283],
+        "不満":     [475, 272, 486, 283]
+    },
+    "夕食_味付け": {
+        "大変満足": [245, 320, 256, 331],
+        "ほぼ満足": [322, 320, 333, 331],
+        "やや不満": [398, 320, 411, 331],
+        "不満":     [475, 320, 486, 331]
+    },
+    "夕食_品数": {
+        "大変満足": [245, 336, 256, 347],
+        "ほぼ満足": [322, 336, 333, 347],
+        "やや不満": [398, 336, 411, 347],
+        "不満":     [475, 336, 486, 347]
+    },
+    "夕食_盛り付け": {
+        "大変満足": [245, 353, 256, 364],
+        "ほぼ満足": [322, 353, 333, 364],
+        "やや不満": [398, 353, 411, 364],
+        "不満":     [475, 353, 486, 364]
+    },
+    "夕食_係り": {
+        "大変満足": [245, 369, 256, 380],
+        "ほぼ満足": [322, 369, 333, 380],
+        "やや不満": [398, 369, 411, 380],
+        "不満":     [475, 369, 486, 380]
+    },
+    "朝食_味付け": {
+        "大変満足": [244, 416, 255, 427],
+        "ほぼ満足": [321, 416, 332, 427],
+        "やや不満": [397, 416, 410, 427],
+        "不満":     [474, 416, 485, 427]
+    },
+    "朝食_品数": {
+        "大変満足": [245, 432, 256, 443],
+        "ほぼ満足": [322, 432, 333, 443],
+        "やや不満": [398, 432, 411, 443],
+        "不満":     [475, 432, 486, 443]
+    },
+    "朝食_係り": {
+        "大変満足": [245, 448, 256, 459],
+        "ほぼ満足": [322, 448, 333, 459],
+        "やや不満": [398, 448, 411, 459],
+        "不満":     [475, 448, 486, 459]
+    },
+    "大浴場_大浴場": {
+        "大変満足": [245, 496, 256, 507],
+        "ほぼ満足": [322, 496, 333, 507],
+        "やや不満": [398, 496, 411, 507],
+        "不満":     [475, 496, 486, 507]
+    },
+    "大浴場_洗い場": {
+        "大変満足": [245, 514, 256, 525],
+        "ほぼ満足": [322, 514, 333, 525],
+        "やや不満": [398, 514, 411, 525],
+        "不満":     [475, 514, 486, 525]
+    },
+    "大浴場_脱衣場": {
+        "大変満足": [245, 529, 256, 540],
+        "ほぼ満足": [322, 529, 333, 540],
+        "やや不満": [398, 529, 411, 540],
+        "不満":     [475, 529, 486, 540]
+    },
+    "認知経路": {
+        "旅行会社":       [57, 582, 69, 597],
+        "インターネット": [132, 582, 146, 597],
+        "雑誌":           [220, 582, 234, 597],
+        "友人・知人":     [273, 582, 287, 597],
+        "その他":         [373, 582, 385, 597]
     }
 }
 # ↑↑↑ ========================================================================= ↑↑↑
@@ -53,13 +161,15 @@ ssl._create_default_https_context = ssl._create_unverified_context
 ocr = easyocr.Reader(['ja'], gpu=False)
 
 def setup_directories(base_dir: Path):
-    """フォルダパスを返します"""
+    """フォルダパスを返します。存在しない場合は作成します。"""
     dirs = {
         "input": base_dir / "input_data",
         "processed": base_dir / "processed_data",
         "error": base_dir / "error_data",
         "output": base_dir / "output_data"
     }
+    for d in dirs.values():
+        d.mkdir(parents=True, exist_ok=True)
     return dirs
 
 def evaluate_checkboxes(img_rgb_np, coords_dict, scale=2.0):
@@ -110,8 +220,8 @@ def evaluate_checkboxes(img_rgb_np, coords_dict, scale=2.0):
                 max_ratio = ratio
                 best_option = opt_name
                 
-        # どの選択肢も「3%」未満しか塗られていなければ「無回答」とする
-        if max_ratio < 0.03:
+        # どの選択肢も「1%」未満しか塗られていなければ「無回答」とする（閾値を下げて感度を上げました）
+        if max_ratio < 0.01:
             best_option = "無回答"
             
         results[question] = best_option
@@ -125,45 +235,47 @@ def process_single_pdf(pdf_path: Path, dirs: dict):
     """
     # ====== 1. PDF読み込みと画像化 ======
     doc = fitz.open(pdf_path)
-    page1 = doc[0]  # 1ページ目
-    
-    zoom_factor = 2.0
-    zoom = fitz.Matrix(zoom_factor, zoom_factor)
-    
-    # 1ページ目の画像化 (マスキングを廃止し、メモリ上のデータとして直接利用)
-    pix1 = page1.get_pixmap(matrix=zoom)
-    img1 = Image.open(io.BytesIO(pix1.tobytes("png")))
-    
-    # ====== 2. EasyOCRによる「日付」「お部屋」のローカル抽出 ======
-    date_crop_box = (DATE_BOX[0] * zoom_factor, DATE_BOX[1] * zoom_factor, DATE_BOX[2] * zoom_factor, DATE_BOX[3] * zoom_factor)
-    room_crop_box = (ROOM_BOX[0] * zoom_factor, ROOM_BOX[1] * zoom_factor, ROOM_BOX[2] * zoom_factor, ROOM_BOX[3] * zoom_factor)
-    
-    date_img = img1.crop(date_crop_box)
-    room_img = img1.crop(room_crop_box)
-    
-    date_np = np.array(date_img.convert('RGB'))
-    room_np = np.array(room_img.convert('RGB'))
-    
-    date_ocr_result = ocr.readtext(date_np, detail=0)
-    room_ocr_result = ocr.readtext(room_np, detail=0)
-    
-    def extract_text(ocr_res):
-        if not ocr_res:
-            return ""
-        return "".join(ocr_res)
-    
-    raw_date = extract_text(date_ocr_result)
-    raw_room = extract_text(room_ocr_result)
-    
-    # difflibで部屋名の自動補正（ファジィマッチング）
-    matches = difflib.get_close_matches(raw_room, ROOM_NAMES, n=1, cutoff=0.4)
-    final_room = matches[0] if matches else raw_room
-    
-    # ====== 3. OpenCVによるチェックボックス領域の判定 ======
-    full_img_np = np.array(img1.convert('RGB'))
-    checkbox_results = evaluate_checkboxes(full_img_np, CHECKBOX_COORDS, scale=zoom_factor)
-    
-    doc.close()
+    try:
+        page1 = doc[0]  # 1ページ目
+        
+        zoom_factor = 2.0
+        zoom = fitz.Matrix(zoom_factor, zoom_factor)
+        
+        # 1ページ目の画像化 (マスキングを廃止し、メモリ上のデータとして直接利用)
+        pix1 = page1.get_pixmap(matrix=zoom)
+        img1 = Image.open(io.BytesIO(pix1.tobytes("png")))
+        
+        # ====== 2. EasyOCRによる「日付」「お部屋」のローカル抽出 ======
+        date_crop_box = (DATE_BOX[0] * zoom_factor, DATE_BOX[1] * zoom_factor, DATE_BOX[2] * zoom_factor, DATE_BOX[3] * zoom_factor)
+        room_crop_box = (ROOM_BOX[0] * zoom_factor, ROOM_BOX[1] * zoom_factor, ROOM_BOX[2] * zoom_factor, ROOM_BOX[3] * zoom_factor)
+        
+        date_img = img1.crop(date_crop_box)
+        room_img = img1.crop(room_crop_box)
+        
+        date_np = np.array(date_img.convert('RGB'))
+        room_np = np.array(room_img.convert('RGB'))
+        
+        date_ocr_result = ocr.readtext(date_np, detail=0)
+        room_ocr_result = ocr.readtext(room_np, detail=0)
+        
+        def extract_text(ocr_res):
+            if not ocr_res:
+                return ""
+            return "".join(ocr_res)
+        
+        raw_date = extract_text(date_ocr_result)
+        raw_room = extract_text(room_ocr_result)
+        
+        # difflibで部屋名の自動補正（ファジィマッチング）
+        matches = difflib.get_close_matches(raw_room, ROOM_NAMES, n=1, cutoff=0.4)
+        final_room = matches[0] if matches else raw_room
+        
+        # ====== 3. OpenCVによるチェックボックス領域の判定 ======
+        full_img_np = np.array(img1.convert('RGB'))
+        checkbox_results = evaluate_checkboxes(full_img_np, CHECKBOX_COORDS, scale=zoom_factor)
+    finally:
+        # 正常終了時もエラー発生時も、必ずPDFファイルは閉じる
+        doc.close()
     
     # ====== 4. データの統合 ======
     # OpenCVで取得したチェックボックスの結果をベースにする
@@ -202,12 +314,18 @@ def main():
             print(f"✅ 完了: {pdf_path.name} -> processed_data フォルダへ移動しました")
             
         except Exception as e:
+            import traceback
             print(f"❌ エラー ({pdf_path.name}): {e}")
+            traceback.print_exc()
             error_destination = dirs["error"] / pdf_path.name
-            if error_destination.exists():
-                error_destination.unlink()
-            shutil.move(str(pdf_path), str(error_destination))
-            print(f"   -> error_data フォルダへ移動し、次のファイルの処理へ進みます。")
+            try:
+                if error_destination.exists():
+                    error_destination.unlink()
+                shutil.move(str(pdf_path), str(error_destination))
+                print(f"   -> error_data フォルダへ移動し、次のファイルの処理へ進みます。")
+            except PermissionError:
+                print(f"⚠️ ファイル {pdf_path.name} が他のプログラム（または内部処理）でロックされているため移動できませんでした。")
+                print("   PDFビューアー等でファイルを開いている場合は閉じてください。")
 
     if len(all_results) > 0:
         print("\n📊 すべてのファイルの処理が終わり、データの集計に入ります...")
@@ -219,8 +337,18 @@ def main():
         df = df[cols]
         
         excel_path = dirs["output"] / "survey_results_local.xlsx"
-        df.to_excel(excel_path, index=False)
-        print(f"🎉 最終出力完了！すべての結果をExcelシートにまとめました！\n保存先: {excel_path}")
+        try:
+            df.to_excel(excel_path, index=False)
+            print(f"🎉 最終出力完了！すべての結果をExcelシートにまとめました！\n保存先: {excel_path}")
+        except PermissionError:
+            print(f"❌ エラー: Excelファイル ({excel_path}) が別のプログラムで開かれているため保存できませんでした。")
+            print("ファイルを閉じてから再度実行するか、別のファイル名で保存するように変更してください。")
+            # 別の名前で保存するフォールバック
+            fallback_path = dirs["output"] / "survey_results_local_fallback.xlsx"
+            df.to_excel(fallback_path, index=False)
+            print(f"⚠️ 代わりに {fallback_path} に保存しました。")
+        except Exception as e:
+            print(f"❌ エラー: Excelファイルの保存中にエラーが発生しました。詳細: {e}")
     else:
         print("\n⚠️ 抽出に成功したデータが一つもありませんでした。")
 

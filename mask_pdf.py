@@ -31,10 +31,13 @@ def mask_name_field(input_pdf, output_pdf, mask_rect_coords):
     
     print(f"✅ マスク処理が完了しました！\n'{output_pdf}' として保存されました。")
 
+from pathlib import Path
+
 if __name__ == "__main__":
+    base_dir = Path(__file__).parent
     # ▼ 1. 入力ファイルと出力ファイルの名前を合わせる
-    input_filename = r"C:\Users\siwas\.gemini\antigravity\scratch\input_data\SKM_C301i26041520130.pdf"            # 元のPDFファイル名
-    output_filename = r"C:\Users\siwas\.gemini\antigravity\scratch\pdf_masking\masked_SKM_C301i26041520130.pdf"    # 黒塗り後の出力ファイル名
+    input_filename = str(base_dir / "input_data" / "SKM_C301i26041520130.pdf")            # 元のPDFファイル名
+    output_filename = str(base_dir / "masked_SKM_C301i26041520130.pdf")    # 黒塗り後の出力ファイル名
     
     # ▼ 2. find_coords.pyで取得した座標をここに入力してください
     # (左上のX座標, 左上のY座標, 右下のX座標, 右下のY座標)

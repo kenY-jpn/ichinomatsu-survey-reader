@@ -84,8 +84,8 @@ def evaluate_checkboxes(img_rgb_np, coords_dict, scale=2.0):
                 max_ratio = ratio
                 best_option = opt_name
                 
-        # 3%未満なら無回答
-        if max_ratio < 0.03:
+        # 1%未満なら無回答（閾値を下げて感度を上げました）
+        if max_ratio < 0.01:
             best_option = "無回答"
             
         results[question] = best_option

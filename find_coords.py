@@ -48,9 +48,12 @@ def get_coordinates(pdf_path):
     # 画像ウィンドウでマウスを操作してください
     plt.show()
 
+from pathlib import Path
+
 if __name__ == "__main__":
     # ▼ ここに調べる対象のPDFファイル名を入力してください
-    pdf_file = r"C:\Users\siwas\.gemini\antigravity\scratch\pdf_masking\input_data\SKM_C301i26041520130.pdf"
+    base_dir = Path(__file__).parent
+    pdf_file = str(base_dir / "input_data" / "SKM_C301i26041520130.pdf")
     
     try:
          get_coordinates(pdf_file)

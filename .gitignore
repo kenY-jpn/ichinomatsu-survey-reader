@@ -12,6 +12,8 @@ input_data/
 processed_data/
 error_data/
 output_data/
+debug_output/
+template_data/
 
 # データファイル
 *.pdf
